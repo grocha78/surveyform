@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Do This Survey Now!</h1>
+    <p id="description">This survey gets basic information for people living in the Houston area.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Enter your name <input id="name" type="text" required placeholder="Looper Pooper" /> </label>
+        <label id="email-label">Enter your email <input id="email" required type="email" placeholder="dog@dog.com" /> </label>
+        <label id="number-label">Enter your age <input id="number" type="number" min="1" max="125" required placeholder="35" /></label> 
+      </fieldset>
+      <fieldset>
+        <legend>Relationship Status</legend>
+        <label for="dropdown"> Select one please
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Single</option>
+            <option value="2">Married</option>
+            <option value="3">Divorced</option>
+            <option value ="4">Widow</option>
+            </select>
+            </label>
+      </fieldset>
+      <fieldset>
+        <legend>Would you recommend being in a relationship? (required) </legend>
+        <label for="yes"><input id="yes" type="radio" value="1" name="Relationship recommend" checked class="inline"/> Yes </label>
+        <label for="no"><input id="no" type="radio" value="2" name="Relationship recommend" class="inline" /> No </label>
+        <label for="maybe-so"><input id="maybe-so" type="radio" value="3" name="Relationship recommend" class="inline" /> Maybe So </label>
+      </fieldset>
+      <fieldset>
+        <legend>Sexual Orientation</legend>
+        <label for="dropdown"> Select one please
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Hetero</option>
+            <option value="2">Homosexual</option>
+            <option value="3">Bi-sexual</option>
+            <option valuee="4">Pan-sexual</option>  
+          </select>
+          </label>
+      </fieldset>
+      <fieldset>
+        <legend>How would you improve relationship options? (Check all that apply)</legend>
+        <label for=""> <input type="checkbox" required value="check" name="more-and-merry" class="inline" />The more the merrier</label>
+        <label for="1"> <input type="checkbox" required value="check" name="asexual" class="inline" />Asexual for me </label>
+        <label for="2"> <input type="checkbox" required value="check" name="self-love" class="inline" />Me, myself and I</label>
+      </fieldset>
+      <fieldset>
+        <label for="Any Comments">Any Comments: 
+          <textarea id="Any Comments" name="Any Comments" rows="3" cols="30" placeholder="I really don't know what to say..."></textarea>
+        </label>
+      </fieldset>
+          <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
